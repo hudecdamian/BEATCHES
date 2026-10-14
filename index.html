@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>BEATCHES – After Sunset</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Inter:wght@300;400;600&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="#top" class="logo">BEATCHES</a>
+        <ul>
+            <li><a href="#about">O nás</a></li>
+            <li><a href="#shop">Kolekce</a></li>
+            <li><a href="#moments">After Sunset</a></li>
+        </ul>
+        <button id="cartBtn" aria-label="Košík">
+            Košík (<span id="count">0</span>)
+        </button>
+    </nav>
+
+    <header class="hero" id="top">
+        <h1>Beatches</h1>
+        <h2>After Sunset</h2>
+        <div class="meta">Collection 001 &nbsp;·&nbsp; Music &nbsp;People &nbsp;Nature &nbsp;Freedom</div>
+        <div>
+            <a href="#shop" class="btn">Prohlédnout kolekci</a>
+        </div>
+    </header>
+
+
+    <section class="about reveal" id="about">
+        <h2>More than <span>clothing.</span></h2>
+        <div>
+            <p>Beatches je životní styl. Hudba, přátelé, západ slunce a vlastní cesta. Oblečení pro chvíle, kdy se den láme do večera a u ohně se začíná to nejlepší.</p>
+            <div class="pillars">
+                <div>Music</div>
+                <div>People</div>
+                <div>Nature</div>
+                <div>Freedom</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="shop" id="shop">
+        <h2 class="reveal">Kolekce 001</h2>
+        <div class="filters" id="filters">
+            <button class="on" data-f="all">Vše</button>
+            <button data-f="top">Trička a mikiny</button>
+            <button data-f="acc">Doplňky</button>
+            <button data-f="bottom">Kraťasy</button>
+        </div>
+        <div class="grid" id="grid"></div>
+    </section>
+
+    <section class="moments" id="moments">
+        <div class="script reveal">After Sunset</div>
+        <p class="reveal">Oheň, skály, hudba a moře.</p>
+        <div class="tiles reveal">
+            <div class="tile t1">Skály</div>
+            <div class="tile t2">Západ slunce</div>
+            <div class="tile t3">Oheň</div>
+            <div class="tile t4">Lidé</div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <strong class="wide">Beatches®</strong><br>
+            Music · People · Nature · Freedom · Est. 2026
+        </div>
+        <form id="news">
+            <input type="email" placeholder="Tvůj e-mail" required aria-label="E-mail">
+            <button>Odebírat</button>
+        </form>
+    </footer>
+
+    <aside id="drawer" aria-label="Košík">
+        <h3 class="wide" style="font-size:.9rem">Tvůj košík</h3>
+        <div id="items"></div>
+        <p class="wide" style="font-size:.85rem">
+            Celkem: <span id="total" style="color:var(--sunset)">0 Kč</span>
+        </p>
+        <button class="btn" style="border:0; cursor:pointer; margin:0 0 8px" id="checkout">
+            Objednat
+        </button>
+        <button class="add" id="close">Zavřít</button>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
