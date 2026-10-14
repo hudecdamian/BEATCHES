@@ -489,3 +489,9 @@ footer button {
         transform: none;
     }
 }
+
+@media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+    .reveal { opacity: 1; transform: none; }
+}
+
